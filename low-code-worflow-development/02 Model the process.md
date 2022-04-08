@@ -7,15 +7,30 @@ You create the process application to contain the Standard HR Open New Position 
 
 1. Navigate to the provided URL on IBM Cloud.
 2. Select the authentication type `Enterprise LDAP` and login with the provided user
+
+
 ![Login](graphics/pic01.png)
+
+
 3. Find the card `Recent Business Automations` and click `Get started` if no artifacts exist yet. Otherwise, click `View all`
 
+
 ![Get started](graphics/pic02.png)
+
+
 4. In the `Business automations` view click `Create` and select `Workflow` -> `Workflow automation`
+
+
 ![Get started](graphics/pic03.png)
+
+
 5. To be able to differentiate your process application from those of other lab participants, provide a unique name for your 
 process application, e.g. `User1 Hiring Sample`. Add a description, e.g. `Contains the process for filling a position.`
+
+
 ![Create a workflow application](graphics/pic04.png)
+
+
 6. Click the blue `Create` button.
 7. The business automations authoring environment opens editing the process application you just created.
 
@@ -24,9 +39,15 @@ process application, e.g. `User1 Hiring Sample`. Add a description, e.g. `Contai
 In this section you will create a process, a reusable process diagram that defines what is common to all runtime instances of that process model.
 1. Make sure your process application is open in the authoring tool.
 2. In the library, click the plus sign next to `Processes` and select `Process`.
+
+
 ![Process](graphics/pic05.png)
+
+
 3. Provide a name for the process, e.g. `Standard HR Open New Position` and click Finish.
 4. The process is created and the process diagram opens showing the following modeling constructs
+
+
 ![Modeling](graphics/pic06.png)
 
 
@@ -38,11 +59,17 @@ The initial interface of the authoring tool includes
   - Properties (4) – Provides the properties of any element that you select in the main canvas.
 5. Open the `Overview` page and add a description.
 
+
 ![Overview](graphics/pic07.png)
+
+
 6. In the `Exposing` section click `Select` for `Expose to start` and then select `All Users`. This means that all users in the system will be allowed to
 start an instance of this process.
 
+
 ![Exposing](graphics/pic08.png)
+
+
 7. Save your changes.
 
 # Add activities and events
@@ -71,25 +98,50 @@ Be aware of the following concepts:
 Model the process:
 1. Go back to the Definition tab of your process.
 2. The Inline User Task is created by default when a process is created. Select this task and delete it. Also delete the arrow between the Start and the End event.
+
+
 ![Inline User Task](graphics/pic09.png)
+
+
 3. Click the Team lane and, in the Properties tab, change the name to Hiring Manager. As Color, select green.
+
+
 ![Hiring Manager Lane](graphics/pic10.png)
+
+
 4. Drag and drop a User Task activity from the palette into the Hiring Manager lane. 
+
+
 ![User Task](graphics/pic11.png)
+
+
 5. Click the activity and type Submit position request.
 6. In the Properties under the Documentation tab change the color of the activity to Blue and add a description for the activity.
+
+
 ![User Task](graphics/pic12.png)
+
+
 7. Add the remaining Lanes and activites using the information in the following table
+
+
 ![Tasks](graphics/pic13.png)
+
 
 Note: You will find the Lane element in the palette (the most top element). To add a new Lane to your process model, drag and drop this element.
 
 8. Select the Notify hiring manager activity and then in the properties for the activity type, select Script.
 9. Move the End event to the right of the Notify hiring manager activity. Your diagram matches the following image:
+
+
 ![Tasks](graphics/pic14.png)
 
+
 Note: your work is continuously saved. You can also manually save your work when finished editing.
+
+
 ![Tasks](graphics/pic15.png)
+
 
 # Model teams
 
@@ -103,5 +155,4 @@ Note: your work is continuously saved. You can also manually save your work when
 
 
 # Conduct playback zero
-
 
