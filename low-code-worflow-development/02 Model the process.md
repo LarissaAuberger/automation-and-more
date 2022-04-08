@@ -179,7 +179,8 @@ The system lane contains the activities that IBM Business Automation Workflow co
 3. To return to the Standard HR Open New Position process, click Human Resources and then select the process from the list.
 4. You are now back in the main canvas of the `Standard HR Open New Position` process.
 4. Add the remaining teams using the information in the following table:
-|Lane	| Team	 | Members	| Managers |
+
+|Lane	        |    Team	    | Members        | Managers |
 | ----------- | ----------- | -------------- | --------------- |
 |Human Resources	| Human Resources	| tw_allusers	| Managers of All Users |
 |General Manager	| GeneralManagers	| tw_allusers	| Managers of All Users |
