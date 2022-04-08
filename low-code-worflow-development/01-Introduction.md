@@ -1,25 +1,34 @@
-# Introduction to business automation
+# Process Requirements
 
-Most of the business processes today are executed by humans, supported by technology. This is about to change.
-More and more, business proesses are executed by technology, supported by humans. 
+The process that you are going to create is called the Standard HR Open New Position process. This process covers how to fill a job position by submitting, approving, and routing a job requisition to the Human Resources (HR) department to search for position candidates.
 
-A process that is automated to a large extend may still require support from a human.
-When it comes to taking a decision based on profound knowledge of a situation, leading a payment dispute with a customer or 
-simply decoding an unreadable handwriting in a form - people can master such situation better and faster than today's technology.
+The `Standard HR Open New Position` process includes the following requirements:
 
-An automated business process delivers efficiency and speed improvements. 
-People who still need to interact with the process may benefit from a user experience that supports them in their task. 
-The user interface may provide all information that a human needs to complete their task in context of this task.
+- The hiring manager must either fill a new position or replace an employee who is departing from an existing position.
+- The hiring manager must determine the position requirements and prepare a position request to be submitted to the HR department. The hiring manager provides the following information in the request:
+  - Name of the hiring manager
+  - Title of the position
+  - Name of the department that requires the position
+  - Whether the request is for a new or existing position
+  - Whether the job is part-time, full-time, or contract
+  - When the position starts
+  - Where the position is located
 
-In general, automation technology includes any form of software that allows an automated execution of business processes:
-Workflow engines, business rules engines, digital document processing, Robotic Process Automation, Natural Language Processing, Artificial Intelligence and many more.
+- For an existing position, the hiring manager must provide the following additional information about the person who will be replaced:
+  - Given name
+  - Family name
+  - The person’s manager or supervisor
+  - Comments regarding the person
 
-In this tutorial, a business process is created that includes a series of steps where humans and technology interact and complement each other.
-The business workflow is authored and executed in IBM Business Automation Workflow (IBM BAW). The creation of the business workflow does not require 
-implementation skills. This concept is referred to as "low-code development".
+- The hiring manager reviews and approves the position request before the hiring procedure continues:
+  - If the request is to fill an existing position, the hiring manager sends the request directly to HR. When HR receives the request, they search for candidates.
+  - If the request is to fill a new position, the hiring manager sends the request to the general manager (GM) for approval.
 
-You will develop the business process Standard HR Open New Position. It is initiated by managers who need to staff an open position.
-The request is approved by a General Manager and then routed to HR to find an appropriate candidate.
+- When HR receives the position request, they process it. The tutorial does not provide an implementation of this processing.
+- The GM must evaluate the new position request and either approve or reject it.
+  - If the GM approves the request, it then goes to HR so that HR can find candidates.
+  - If the GM rejects the request, the hiring manager is notified and the process ends.
+  - If the GM does not handle the request by the due date, the GM is notified.
 
 The original tutorial can be found in https://www.ibm.com/community/automation/docs/baw/tutorials/hiring-tutorial/
 This version of the tutorial includes updates to the look and feel based on IBM Cloud Pak for Business Automation version 21.0.3.
