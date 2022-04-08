@@ -71,7 +71,6 @@ Be aware of the following concepts:
 Model the process:
 1. Go back to the Definition tab of your process.
 2. The Inline User Task is created by default when a process is created. Select this task and delete it. Also delete the arrow between the Start and the End event.
-
 ![Inline User Task](graphics/pic09.png)
 3. Click the Team lane and, in the Properties tab, change the name to Hiring Manager. As Color, select green.
 ![Hiring Manager Lane](graphics/pic10.png)
