@@ -67,7 +67,7 @@ For this tutorial, you'll import a workflow automation and publish it as an auto
    
    a. Open the navigation menu on the upper left, expand **Design**, and click **Business automations**.
 
-   b. In the Business automations page, click **Import**. Go to the folder where you put the .twx file and import it by using drag & drop. Click OK.
+   b. In the Business automations page, click **Import**. Go to the folder where you put the .twx file and import it. Click OK.
    
      <kbd><img src="images/import_button.png" width="400px"/></kbd>     
      
@@ -107,7 +107,7 @@ To create a business orchestration,
 
    <kbd><img src="images/addActivity.gif" width="700px"/></kbd>
    
-8. Under **Automation activity**, click **Select** and select the **Customer Loan Services** automation service and the **getCustomerInfo** operation. 
+8. Under **Automation activity**, click **Select** and select the **Customer Loan Services** automation service and the **getCustomerInfo** operation. Click **Add**.
 
    When you select an operation, the operation and its parameters (data structure) are imported into your orchestration.
 
@@ -123,7 +123,7 @@ To create a business orchestration,
    
    The customerInfo data type is a composite data type, which defines a group of related attributes that can be either composite or simple data types. Save your changes.
    
-10. Add another activity, name it `Get credit score`, and select **Automation service**  as the activity type. The automation service is **Customer Loan Services** and the operation is **getCreditScore**. Now map the input **customer** to the **customerInfo** data item and map the output **creditScore** to a new data item called `creditScore`. Save your changes.
+10. Add another activity in the same activity group. Name it `Get credit score`, and select **Automation service**  as the activity type. The automation service is **Customer Loan Services** and the operation is **getCreditScore**. Now map the input **customer** to the **customerInfo** data item and map the output **creditScore** to a new data item called `creditScore`. Save your changes.
 
     **Tip:** To work faster on your own orchestrations, hover over an activity to duplicate it. <kbd> <img src="images/duplicate.png" width="10px"/></kbd>
 
@@ -155,7 +155,7 @@ Add the logic that decides how the loan approval is handled. Based on the custom
    
    b. Specify the layout. Move the data items until they are in the order you want. Mark all the data items except **errors** as read-only. Click **Done**.
 
-6. On the right side under **Edit the activity** click **All users**. Add a user role called `Customer representative` and assign the activity to this user role.
+6. On the right side under **Assign this activity to** click **All users**. Add a user role called `Customer representative` and assign the activity to this user role.
 
 7. Set the activity to be due in 1 hour.
 
@@ -165,7 +165,13 @@ If the loan is determined to be low risk, an automation service activity automat
 
 1. Add an automation service activity to the Low risk path, and name it `Auto approve`. 
 
-2. Select the Customer Loan Services automation service and the approveLoan operation. Map the inputs: Customer to customerInfo, loanAmount to loanAmount, and creditScore to crediScore. Map the output approved to approved.
+2. a. As Activity type select **Automation service**. 
+
+   b. Under **Automation activity** click Select. 
+
+   c. Select the Customer Loan Services automation service and the approveLoan operation. Click **Add**.
+
+   d. Under **Automation service mapping** click **Define the mapping**. Map the inputs: Customer to customerInfo, loanAmount to loanAmount, and creditScore to crediScore. Map the output approved to approved.
 
 3. Add a `Notify customer` user task activity to the right of the logic group. Select the data to be displayed: givenName, surname, loanAmount, and approved. Mark all the data items read only.
   
