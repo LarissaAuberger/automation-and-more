@@ -233,7 +233,8 @@ Preview your orchestration at anytime to get a sense for how it looks and behave
 
 9. Close the preview browser. You're all done previewing the high-risk path.
 
-## Publish your orchestration as an automation service
+
+## Optional: Publish your orchestration as an automation service
 If you want your orchestration to be discovered and reused by other applications and automations, publish your orchestration as an automation service:
 
 1. Click **Launch** <img src="images/launchicon.png" width="30px"/>. 
