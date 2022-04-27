@@ -117,7 +117,7 @@ To create a business orchestration,
 
    a. Map the input data. In the field beside **givenName**, open the drop-down menu and add a new data item. The name givenName and type Text are prefilled for you. Keep the suggestions and click **Add**. Similarly, map the input data item **surname** to a new data item called `surname`.
    
-   <kbd> <img src="images/defineMaps.gif" width="700px"/></kbd>
+   <kbd> <img src="images/defineMaps.gif"/></kbd>
       
    b. Map the output data item customerInfo. In the drop-down menu, add a new data item called `customerInfo`and select **customerInfo** as the type. 
    
@@ -137,7 +137,7 @@ Add the logic that decides how the loan approval is handled. Based on the custom
       
       **Tip:** To enter a value, click the **Switch to enter a value** button. <kbd> <img src="images/switch.png" width="100px"/></kbd>
    
-   <kbd><img src="images/logics.gif" width="700px"/></kbd>
+   <kbd><img src="images/logics.gif"/></kbd>
    
    If the loan is determined to be high risk, a customer representative verifies the information, flags errors, and then a loan manager approves or rejects the loan. 
   
