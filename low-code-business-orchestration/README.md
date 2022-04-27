@@ -35,7 +35,7 @@ The provided environent has installed these starter patterns:
 - The Business Automation Application starter pattern, including the optional Business Orchestration component.
 - The Business Automation Workflow Authoring and Automation Workstream Services starter pattern. Only the Business Automation Studio component is required for this tutorial.
 
-For information on how to install these patterns, see [Installing starter deployments](https://www.ibm.com/docs/SSYHZ8_21.0.3/com.ibm.dba.install/op_topics/tsk_install_demo.html).
+For information how to install these patterns, see [Installing starter deployments](https://www.ibm.com/docs/SSYHZ8_21.0.3/com.ibm.dba.install/op_topics/tsk_install_demo.html). (Not needed for this lab, as the environment has been setup for you).
 
 ## Scenario
 You as a business analyst automate the approval or rejection of a loan application.
@@ -43,8 +43,11 @@ You as a business analyst automate the approval or rejection of a loan applicati
 <kbd><img src="images/diag_tutorial_loanflow.png"/></kbd>
 
 In this tutorial, the **Customer Loan Eligibility** workflow automation has implemented three services:
+
   a. getCustomerInfo
+
   b. getCreditScore
+
   c. approveLoan
 
 You will need these services in your business application. Therefore, you will import and publish this workflow automation first. Then you will create the business orchestration. Finally, you will add logic and flows to your business application. 
@@ -54,7 +57,7 @@ For this tutorial, you'll import a workflow automation and publish it as an auto
 
 
 1. Download the [Customer Loan Eligibility workflow automation](Customer_Loan_Eligibility.twx) to a folder on your computer.
-2. a. Navigate to the URL and log in to IBM Cloud Pak for Business Automation that has been provided to you.
+2. a. Navigate to the URL that has been provided to you and log in to IBM Cloud Pak for Business Automation.
 
    b. On the Login page select to login use the **Enterprise LDAP** authentication type.
    
