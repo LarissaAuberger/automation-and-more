@@ -169,11 +169,17 @@ If the loan is determined to be low risk, an automation service activity automat
 
    b. Under **Automation activity** click Select. 
 
-   c. Select the Customer Loan Services automation service and the approveLoan operation. Click **Add**.
+   c. Select the **Customer Loan Services** automation service and the **approveLoan** operation. Click **Add**.
 
-   d. Under **Automation service mapping** click **Define the mapping**. Map the inputs: Customer to customerInfo, loanAmount to loanAmount, and creditScore to crediScore. Map the output approved to approved.
+   d. Under **Automation service mapping** click **Define the mapping**. Map the inputs: customer to customerInfo, loanAmount to loanAmount, and creditScore to crediScore. Map the output approved to approved. Click **Save**.
 
-3. Add a `Notify customer` user task activity to the right of the logic group. Select the data to be displayed: givenName, surname, loanAmount, and approved. Mark all the data items read only.
+3. a. Add a `Notify customer` user task activity to the right of the logic group. 
+
+   b. Click **Define the user task**. 
+
+   c. Select the data to be displayed: givenName, surname, loanAmount, and approved. Click **Next**.
+
+   d. Mark all the data items read only. Click **Done**.
   
 ## Create the UI to launch your orchestration  
 
@@ -185,13 +191,15 @@ To enable someone to start the orchestration,
 
 2. Choose to launch the orchestration as a user interface. 
 
-   a. Under **Edit the user interface** define the user interface: select the data items givenName, surname, and loanAmount. 
+   a. Under **Definet the user interface** define the user interface: select the data items givenName, surname, and loanAmount. Click **Next**.
+
+   b. Re-arrange the items as you like. Click **Done**.
    
    b. Under **Who can launch this orchestration?** assign the **Customer representative role**. 
        
 You're done! Your completed orchestration looks like this:
 
-  <kbd><img src="images/finalorch.png" width="900px"/></kbd>
+  <kbd><img src="images/finalorch.png" width="1200px"/></kbd>
   
 Now, you're ready to preview it to see how it works.
     
