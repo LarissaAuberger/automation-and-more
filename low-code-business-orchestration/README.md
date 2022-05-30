@@ -12,7 +12,7 @@ This version has been adjusted to reflect the IBM Cloud environment where the re
 ## Table of contents
 
  - [Objectives](#objectives)
- - [Before you begin](#before-you-begin)
+ - [Some background (not needed for this lab)](#some-background)
  - [Scenario](#scenario)
  - [Import the required artifacts](#import-required-artifacts)
  - [Create a business orchestration](#create-a-business-orchestration)
@@ -29,7 +29,7 @@ In this tutorial, you'll learn how to
 - Preview the orchestration
 - Publish the orchestration as a reusable automation service
 
-## Before you begin
+## Some background (not needed for this lab) 
 The provided environent has installed these starter patterns: 
 
 - The Business Automation Application starter pattern, including the optional Business Orchestration component.
@@ -123,9 +123,9 @@ To create a business orchestration,
    
    The customerInfo data type is a composite data type, which defines a group of related attributes that can be either composite or simple data types. Save your changes.
    
-10. Add another activity in the same activity group. Name it `Get credit score`, and select **Automation service**  as the activity type. The automation service is **Customer Loan Services** and the operation is **getCreditScore**. Now map the input **customer** to the **customerInfo** data item and map the output **creditScore** to a new data item called `creditScore`. Save your changes.
-
     **Tip:** To work faster on your own orchestrations, hover over an activity to duplicate it. <kbd> <img src="images/duplicate.png" width="10px"/></kbd>
+
+10. Add another activity in the same activity group. Name it `Get credit score`, and select **Automation service**  as the activity type. The automation service is **Customer Loan Services** and the operation is **getCreditScore**. Now map the input **customer** to the **customerInfo** data item and map the output **creditScore** to a new data item called `creditScore`. Save your changes.
 
 
 ### Add the logic, conditions, and paths 
@@ -133,9 +133,11 @@ Add the logic that decides how the loan approval is handled. Based on the custom
 
 1. Add the logic, conditions, and activities to the paths. Click the + (plus) beside the activity group. Select **New logic** and edit the logic by entering `High risk?` as the name. Now name Path 1 `High risk` and Path 2 `Low risk`. Edit the conditions for the logic. Route the path to **High risk** if any of the following conditions are true:
    - If **credit score** is less than 700    
+
+      **Tip:** To enter a value, click the **Switch to enter a value** button. <kbd> <img src="images/switch.png" width="100px"/></kbd>
+
    - If **yearlyIncome** in customerInfo is less than loanAmount. You'll need to add a new data item called `loanAmount` of type Decimal. 
       
-      **Tip:** To enter a value, click the **Switch to enter a value** button. <kbd> <img src="images/switch.png" width="100px"/></kbd>
    
    <kbd><img src="images/logics.gif"/></kbd>
    
