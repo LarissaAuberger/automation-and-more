@@ -12,7 +12,7 @@ This version has been adjusted to reflect the IBM Cloud environment where the re
 ## Table of contents
 
  - [Objectives](#objectives)
- - [Some background (not needed for this lab)](#some-background)
+ - [Some background)](#some-background)
  - [Scenario](#scenario)
  - [Import the required artifacts](#import-required-artifacts)
  - [Create a business orchestration](#create-a-business-orchestration)
@@ -29,7 +29,8 @@ In this tutorial, you'll learn how to
 - Preview the orchestration
 - Publish the orchestration as a reusable automation service
 
-## Some background (not needed for this lab) 
+## Some background 
+This section is not needed for this lab, it is only meant to provide some background about the environment.
 The provided environent has installed these starter patterns: 
 
 - The Business Automation Application starter pattern, including the optional Business Orchestration component.
