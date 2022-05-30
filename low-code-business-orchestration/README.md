@@ -124,7 +124,7 @@ To create a business orchestration,
    
    The customerInfo data type is a composite data type, which defines a group of related attributes that can be either composite or simple data types. Save your changes.
    
-    **Tip:** To work faster on your own orchestrations, hover over an activity to duplicate it. <kbd> <img src="images/duplicate.png" width="10px"/></kbd>
+**Tip:** For the next step, to work faster on your own orchestrations, hover over an activity to duplicate it. <kbd> <img src="images/duplicate.png" width="10px"/></kbd>
 
 10. Add another activity in the same activity group. Name it `Get credit score`, and select **Automation service**  as the activity type. The automation service is **Customer Loan Services** and the operation is **getCreditScore**. Now map the input **customer** to the **customerInfo** data item and map the output **creditScore** to a new data item called `creditScore`. Save your changes.
 
