@@ -12,7 +12,7 @@ This version has been adjusted to reflect the IBM Cloud environment where the re
 ## Table of contents
 
  - [Objectives](#objectives)
- - [Some background)](#some-background)
+ - [Some background](#some-background)
  - [Scenario](#scenario)
  - [Import the required artifacts](#import-required-artifacts)
  - [Create a business orchestration](#create-a-business-orchestration)
